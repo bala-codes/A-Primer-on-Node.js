@@ -1,0 +1,63 @@
+{
+  "name": "sample-autopilot-voice-ivr",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./app.js",
+  "scripts": {
+    "start": "node .",
+    "setup": "configure-env",
+    "test": "eslint . && cross-env NODE_ENV=test mocha test",
+    "format": "eslint . --fix",
+    "dev": "nodemon .",
+    "build": "",
+    "initialize": ""
+  },
+  "description": "Voice-Powered IVR Chatbot with Autopilot",
+  "author": {
+    "name": "Twilio",
+    "email": "open-source@twilio.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twilio-labs/sample-autopilot-voice-ivr"
+  },
+  "keywords": [
+    "node",
+    "twilio",
+    "express"
+  ],
+  "engines": {
+    "node": ">=8.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "configure-env": "^1.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.1",
+    "dotenv": "^10.0.0",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.0",
+    "lowdb": "^1.0.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.10.0",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0",
+    "twilio": "^3.39.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.7",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
